@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     
+    <meta name="theme-color" content="#870619"> 
+    <meta
+      name="keywords"
+      content="html, css, javascript, справочник, gki-webik.ru, gki-webik, web-programmist, программист, разработчик, сайт, учебник, рецепты кода, заметки для программистов, лайфхаки для программистов, веб разработчик, программист, разработчик веб и мультимедийных приложений"
+    />
+    <meta
+      name="description"
+      content="gki-webik.ru - современный, надёжный и лучший сайт для тех, кто любит web - разработку. Присоединяйся! Будет весело!"
+    /> <link rel="icon" type="image/png" sizes="192x192"  href="https://gki-webik.ru/img/ico-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://gki-webik.ru/img/ico-32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://gki-webik.ru/img/ico-96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://gki-webik.ru/img/ico-16.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+    body {
+      font-family: Forum;
+    }
+
+    ol {
+      font-size: 16px;
+      font-weight: 900;
+    }
+    ol p {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    h1 {
+      text-align: center;
+      color: #286474;
+    }
+    /* Собственно сам слайдер */
+
+    .slider {
+      max-width: 50%;
+      position: relative;
+      height: 300px;
+      margin-bottom: 130px;
+      margin: auto;
+    }
+    /* Картинка мастабируется по отношению к родительскому элементу */
+    .slider .item img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      border: 5px solid black;
+    }
+
+    /* Кнопки вперед и назад */
+    .slider .prev, .slider .next {
+      cursor: pointer;
+      position: relative;
+      margin-left: 40px;
+      width: auto;
+      padding: 16px;
+      color: #86a5acda;
+      font-weight: bold;
+      font-size: 60px;
+      transition: 0.6s ease;
+    }
+@media screen and (min-width: 1000px){
+      .slider .prev, .slider .next {
+      cursor: pointer;
+      position: relative;
+      margin-left: 100px;
+      margin-right: 80px;
+      width: auto;
+      padding: 16px;
+      color: #86a5acda;
+      font-weight: bold;
+      font-size: 60px;
+      transition: 0.6s ease;
+    }
+}
+@media screen and (max-width: 800px){
+      .slider .prev, .slider .next {
+      cursor: pointer;
+      position: relative;
+      margin-left: 40px;
+      width: auto;
+      padding: 16px;
+      color: #86a5acda;
+      font-weight: bold;
+      font-size: 50px;
+      transition: 0.6s ease;
+    }
+}
+
+    .slider .next {
+    
+      border-radius: 3px 0 0 3px;
+    }
+    .slider .prev {
+    
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* При наведении на кнопки добавляем фон кнопок */
+
+    .slider .prev:hover,
+    .slider .next:hover {
+      background-color: transparent;
+    }
+
+
+    /* Заголовок слайда */
+    .slideText {
+      position: absolute;
+      color: #fff;
+      font-size: 85px;
+      /* Выравнивание текста по горизонтали и по вертикали*/
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      /* Тень*/
+      text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+      border: 2px rgb(201, 201, 201) dashed;
+      padding: 15px;
+      text-align: center;
+    }
+
+
+    /* Кружочки */
+
+    .slider-dots {
+      text-align: center;
+      top: 1001px;
+      position: fixed;
+      left: 350px;
+    }
+    .slider-dots_item {
+      cursor: pointer;
+      height: 40px;
+      width: 50px;
+      margin: 0 2px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .slider-dots_item:hover {
+      background-color: rgb(0, 0, 0);
+    }
+
+
+    /* Анимация слайдов */
+
+    .slider .item {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+
+  <ol>
+    <h1>Тройчатка для роз</h1>
+    <li>1 чайная ложка мёда</li>
+    <li>2 чайные ложки сока алоэ ( стебель алоэ должен хотя бы сутки полежать в холодильнике )</li>
+    <li>1 чайная ложка золы. <br>Всё это помещаем в стакан и наливаем 0,5 стакана воды. Ставим туда свои черенки на 1 день. Вынимаем черенки и высаживаем в почву, накрываем бутылкой или пакетом.</li>
+  </ol>
+
+
+<center>
+  <video src="vid.mp4" style="width: 81%;" controls></video>
+</center>
+
+
+<div class="slider">
+
+<div class="item">
+<img src="kler.jpg" alt="Первый слайд">
+</div>
+
+<div class="item">
+<img src="mama.jpg" alt="Второй слайд">
+</div>
+
+<div class="item">
+<img src="vilam.jpg" alt="Третий слайд">
+</div>
+
+<div class="item">
+<img src="laksor.jpg" alt="Четвертый слайд">
+</div>
+
+<div class="item">
+<img src="amadeus.jpg" alt="Пятый слайд">
+</div>
+
+<div class="item">
+<img src="figi.jpg" alt="Шестой слайд">
+</div>
+
+<a class="prev" onclick="minusSlide()">&#10094;</a>
+<a class="next" onclick="plusSlide()">&#10095;</a>
+
+</div>
+
+
+<script src="Альбом/script.js"></script>
+
+   </body>
+</html>

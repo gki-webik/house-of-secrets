@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  }
+  
+/*МЕНЮ*/
+.button-menu {
+  background-color: green;/*цвет кнопки*/
+  color: white;/* цает текста на кнопке*/
+  padding: 15px;/* отступ от краев */
+  font-size: 16px;/*размер шрифта*/
+  cursor: pointer;/* изменение курсора при наведении мышкой на ПК*/
+}
+
+.button-menu:hover, .button-menu:focus {
+  background-color: green; /* после нажатия, меняет на этот цвет*/
+}
+
+.glavmenu {
+  position: absolute;/*позиция*/
+}
+
+.button-podmenu {
+  display: none;/*без него меню не выпадает*/
+  position: absolute;/*позиция*/
+  background-color: #f1f1f1;/*цвет кнопки*/
+  min-width: 160px;/*максимальная ширина кнопок в меню*/
+  overflow: scroll;/* ксли текст не вмещается в родителя, можно будет его смотреть передвигая скролл*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*создает тень*/
+  z-index: 1;/*управляет наложением 1 объекта на другой*/
+}
+
+.button-podmenu a {
+  color: black;/*цвет текста*/
+  padding: 12px 16px;/*отступы*/
+  text-decoration: none;/*убирает подчеркивание ссылок*/
+  display: block;/*выстраивает кнопки в столбик*/
+}
+.show {display: block;}/*без него не открывается*/
+
+table{
+outline: 5px solid #00FF00;	
+}
+span{
+border: 5px solid lightgreen;
+background: linear-gradient(0deg, rgba(255,0,126,0.7952762708511179) 50%, rgba(45,225,253,1) 100%);
+color: white;
+border-radius: 7px;
+}
+h2{
+border: 5px solid lightgreen;
+background: linear-gradient(0deg, rgba(255,0,126,0.7952762708511179) 50%, rgba(45,225,253,1) 100%);
+color: white;
+border-radius: 7px;
+}
+h3{
+border: 5px solid lightgreen;
+background: linear-gradient(0deg, rgba(255,0,126,0.7952762708511179) 50%, rgba(45,225,253,1) 100%);
+color: white;
+border-radius: 7px;
+}

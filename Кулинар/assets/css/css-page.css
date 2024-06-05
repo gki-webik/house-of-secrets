@@ -1,0 +1,516 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+.dark-fon {
+  background-image: url("../../img/fon13.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 130%;
+  filter: brightness(1) blur(20px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: -50px;
+  transform: rotate(0deg);
+}
+.light-fon {
+  background-image: url("../../img/fon10.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.8) blur(70px);
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.body-dark {
+  background-color: #1e1e1e;
+  color: rgb(211, 211, 211);
+}
+.body-light {
+  background-color: #d3d3d3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1vw;
+  color-scheme: dark !important;
+  -webkit-color-scheme: dark !important;
+  -moz-color-scheme: dark !important;
+  -ms-color-scheme: dark !important;
+}
+footer {
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  width: 100%;
+  color: var(--font-color);
+}
+/* header, main, nav-a поверх фона */
+.z-fon {
+  position: relative;
+  z-index: 50;
+}
+a,
+button {
+  cursor: pointer;
+}
+header {
+  position: relative;
+  z-index: 99;
+}
+/* Крошки */
+.light-nav-a {
+  margin-left: 30px;
+}
+.light-nav-a > a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+/* Последняя хлебная крошка. Выделяется для красоты цветом */
+.light-tect {
+  color: rgb(0, 0, 0) !important;
+}
+/* Крошки */
+.dark-nav-a {
+  margin-left: 30px;
+}
+.dark-nav-a > a {
+  text-decoration: none;
+  color: rgb(194, 194, 194);
+}
+/* Последняя хлебная крошка. Выделяется для красоты цветом */
+.dark-tect {
+  color: rgb(255, 255, 255) !important;
+}
+/* Тире между крошками */
+.light-span-tire {
+  height: 2px;
+  background-color: rgb(40, 40, 40);
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Тире между крошками */
+.dark-span-tire {
+  height: 2px;
+  background-color: rgb(112, 112, 112);
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+@media screen and (max-width: 899px) {
+  .dark-fon {
+    background-image: url("../../img/fon13.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 130%;
+    filter: brightness(1) blur(2px);
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    top: -50px;
+    transform: rotate(0deg);
+  }
+  /* Поиск */
+  #search {
+    width: 80%;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.269);
+    font-size: 1.5em !important;
+    padding: 10px;
+    position: relative;
+    left: 60px;
+    color: white;
+  }
+  #search::placeholder {
+    color: rgb(153, 153, 153);
+  }
+  /* Контейнер с тегами - фильтрами */
+  .tag-light {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tag-dark {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Блок с тегами-фильтрами */
+  .item-con-1-dark {
+    background-color: rgba(0, 0, 0, 0.418);
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+    padding: 20px 0px;
+  }
+  .item-con-1-light {
+    background-color: rgba(255, 255, 255, 0.303);
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+    padding: 20px 0px;
+  }
+  .ul-list-light {
+    background-color: rgba(255, 255, 255, 0.691);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 30px;
+  }
+  /* Блок с тегами 1 категории */
+  .ul-list-dark {
+    background-color: rgba(0, 0, 0, 0.418);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-left: 30px;
+  }
+  body {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 3.8vw;
+    color-scheme: dark !important;
+    -webkit-color-scheme: dark !important;
+    -moz-color-scheme: dark !important;
+    -ms-color-scheme: dark !important;
+  }
+  /* Контейнер с тегами */
+  .content-ul {
+    display: none;
+  }
+  /* Поиск */
+  .search input {
+    display: none;
+  }
+  .search2 {
+    display: inline;
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+  /* Контейнер с тегами - фильтрами */
+  .tag-light {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 900;
+  }
+  /* Контейнер с тегами без буквы */
+  #ul {
+    padding: 0;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  #ul > li > h3 {
+    width: 100% !important;
+  }
+  #ul > li {
+    width: 100% !important;
+  }
+  #ul > li > h3 > a {
+    width: 100% !important;
+  }
+  /* Буква для тегов */
+  .p-item {
+    margin-top: 50px;
+  }
+  /* kbd */
+  #kk {
+    margin-left: -30px;
+  }
+  /* Блок с тегами-фильтрами */
+  .item-con-1 {
+    background-color: var(--bg-block);
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+    padding: 20px 30px;
+  }
+}
+/* Название для блока с тегами - фильтрами */
+#zag h2 {
+  font-size: 1.5em !important;
+  color: var(--font-color);
+}
+/* ПОдглавный контейнер */
+.content-gl {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 1.5vw;
+  }
+  /* Контейнер с тегами - фильтрами */
+  .tag-light {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tag-dark {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Блок с тегами-фильтрами */
+  .item-con-1-dark {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+    padding: 20px 100px;
+  }
+  .item-con-1-light {
+    background-color: rgba(255, 255, 255, 0.303);
+    margin: 10px;
+    position: relative;
+    z-index: 99;
+    padding: 20px 100px;
+  }
+  .ul-list-light {
+    background-color: rgba(255, 255, 255, 0.303);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 30px;
+  }
+  /* Блок с тегами 1 категории */
+  .ul-list-dark {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(211, 211, 211);
+    padding: 20px;
+    padding-left: 30px;
+  }
+  .ul-list-light2 {
+    background-color: rgba(255, 255, 255, 0.707);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 30px;
+  }
+  /* Блок с тегами 1 категории */
+  .ul-list-dark2 {
+    background-color: rgba(0, 0, 0, 0.469);
+    color: rgb(211, 211, 211);
+    padding: 20px;
+    padding-left: 30px;
+  }
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+kbd:hover {
+  color: #ff0400;
+}
+/* Подглавный контейнер */
+.content-ul {
+  width: 45%;
+  font-size: 0.6em !important;
+  border-radius: 5px;
+  position: sticky;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  max-height: 2600px;
+  top: 50px;
+}
+.content-ul::-webkit-scrollbar {
+  width: 7px;
+}
+.content-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.529);
+  border-radius: 5px;
+}
+.content-ul::-webkit-scrollbar-track {
+  background-color: rgba(169, 169, 169, 0.155);
+  border-radius: 10px;
+}
+/* Буква для тегов */
+.p-item > h2 {
+  color: #ec0101;
+  text-align: left;
+  padding-top: 20px !important;
+  margin-left: -10px;
+}
+/* Теги без буквы */
+#ul {
+  width: 100%;
+  margin-left: -50px;
+}
+li {
+  padding: 0;
+}
+a {
+  color: var(--font-color);
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.m1 {
+  margin-top: -40px;
+}
+/* Поиск */
+#search {
+  width: 80%;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.269);
+  font-size: 0.7em;
+  padding: 10px;
+  position: relative;
+  left: 60px;
+  color: white;
+}
+#search::placeholder {
+  color: rgb(153, 153, 153);
+}
+/* Подглавный контейнер */
+.content-gl {
+  display: flex;
+  justify-content: space-around;
+}
+/* Колонки тегов - фильтров */
+#t1,
+#t2,
+#t3,
+#t4 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+/* Цвет тегов - фильтров */
+.tag-light > #t1 > a {
+  padding: 10px;
+  color: rgb(0, 36, 126);
+}
+.tag-light > #t2 > a {
+  padding: 10px;
+  color: rgb(0, 36, 126);
+}
+.tag-light > #t3 > a {
+  padding: 10px;
+  color: rgb(0, 36, 126);
+}
+.tag-light > #t4 > a {
+  padding: 10px;
+  color: rgb(0, 36, 126);
+}
+.tag-light > #t1 > a:hover {
+  color: red;
+}
+.tag-light > #t2 > a:hover {
+  color: red;
+}
+.tag-light > #t3 > a:hover {
+  color: red;
+}
+.tag-light > #t4 > a:hover {
+  color: red;
+}
+.tag-dark > #t1 > a {
+  padding: 10px;
+  color: rgb(113, 153, 255);
+}
+.tag-dark > #t2 > a {
+  padding: 10px;
+  color: rgb(113, 153, 255);
+}
+.tag-dark > #t3 > a {
+  padding: 10px;
+  color: rgb(113, 153, 255);
+}
+.tag-dark > #t4 > a {
+  padding: 10px;
+  color: rgb(113, 153, 255);
+}
+.tag-dark > #t1 > a:hover {
+  color: red;
+}
+.tag-dark > #t2 > a:hover {
+  color: red;
+}
+.tag-dark > #t3 > a:hover {
+  color: red;
+}
+.tag-dark > #t4 > a:hover {
+  color: red;
+}
+/* Самый главный контейнер */
+.content-very-boss {
+  max-width: 100vw !important;
+}
+/* Главный контейнер */
+.boss {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Заголовок для тегов - фильтров */
+#zag h2 {
+  font-size: 1.8vw;
+}
+/* Первый блок тегов - фильтров */
+.one-z {
+  margin-top: 35px;
+}
+/* kbd */
+.kk-dark {
+  color: rgb(113, 153, 255);
+}
+/* kbd */
+.kk-light {
+  color: rgb(0, 36, 126);
+}
+
+
+
+@media screen and (width >= 655px) and (width <=898px) {
+  body,
+  pre {
+    font-size: 1.3em !important;
+  }
+}

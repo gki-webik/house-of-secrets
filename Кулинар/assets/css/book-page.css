@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+#nav {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+a {
+  color: black;
+}
+h1,
+h2 {
+  position: relative;
+  z-index: 9;
+}
+  .books-html {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  .item-html {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: end;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  #item img {
+    max-height: 150px;
+    border: 3px solid black;
+  }
+  #item p {
+    text-align: center;
+    max-height: 50px;
+  }
+  #item > div {
+    padding-top: 10px;
+    font-size: 0.7em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  #item {
+    width: 200px;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+  }
+  #item > p > a {
+    border: 3px solid currentColor;
+    padding: 5px 9px 5px 9px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -5px;
+    font-size: 0.7em;
+    margin-left: -10px;
+    color: currentColor;
+  }
+svg {
+  vertical-align: middle;
+}
+.white-light {
+  margin-left: 150px;
+  margin-right: 30px;
+  background-color: #ffffff6a;
+  padding: 25px;
+  border-radius: 7px;
+  border: 2px solid #c8c8c876;
+  color: black !important;
+}
+.white-dark {
+  margin-left: 150px;
+  background-color: #1d1d1d6a;
+  color: rgb(255, 255, 255) !important;
+  margin-right: 30px;
+  padding: 25px;
+  border-radius: 7px;
+}
+.white-color {
+  color: white;
+}
+.dark-color {
+  color: rgb(0, 0, 0);
+}
+
+/* Крошки */
+.light-nav-a2 {
+  text-align: center;
+  position: relative;
+  margin: 20px;
+  z-index: 99;
+}
+.light-nav-a2 > a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  margin: 10px;
+  cursor: pointer;
+}
+/* Крошки */
+.dark-nav-a2 {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  z-index: 99;
+}
+.dark-nav-a2 > a {
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  color: rgb(226, 226, 226);
+}

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Кулинар</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/home-page.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/ico-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/ico-96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico-16.png" />
+  </head>
+  <body>
+    <style>
+      body {
+        color-scheme: only !important;
+      }
+    </style>
+    <header>
+      <button id="ia" style="cursor: pointer">Меню</button>
+      <div class="menu-content-item" id="menu-item">
+        <div class="menu" id="menuid" style="text-align: center">
+          <nav>
+            <a id="a1" class="f-size">Запеканка</a>
+            <a id="a2" class="f-size">Торт</a>
+            <a id="a3" class="f-size">Пирог</a>
+            <a id="a4" class="f-size">Салат</a>
+            <a id="a5" class="f-size">Каша</a>
+            <a id="a66" class="f-size">Разное</a>
+            <a href="video/raznoe.html" class="f-size">Видео</a>
+            <a
+              href="https://admin-webik/other-sites/kulinar/index.html#i5"
+              id="a6"
+              class="f-size"
+              >Поддержка</a
+            >
+          </nav>
+
+          <div class="tort-2-item" id="tort-2">
+            <div id="item-1">
+              <img
+                src="tort/norka/norkakrota.jpg"
+                onclick="window.location.href='tort/norka/index.html';"
+                alt=""
+              />
+              <button
+                onclick="window.location.href='tort/norka/index.html';"
+                id="tort-1"
+                class="f-size"
+              >
+                Торт "Норка крота"
+              </button>
+            </div>
+            <div id="item-2">
+              <img
+                src="tort/molreka/moreka.jpg"
+                onclick="window.location.href='tort/molreka/index.html';"
+                alt=""
+              />
+              <button
+                onclick="window.location.href='tort/molreka/index.html';"
+                id="tort-3"
+                class="f-size"
+              >
+                Торт "Молочная река"
+              </button>
+            </div>
+          </div>
+          <div class="zapekanka-2-item" id="zapekanka-2">
+            <div id="zap">
+              <div id="z-item-1">
+                <img
+                  onclick="window.location.href='zapekanka/zapekanka/index.html';"
+                  src="zapekanka/zapekanka/zapek.jpg"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/zapekanka/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Запеканка
+                </button>
+              </div>
+              <div id="z-item-1">
+                <img
+                  onclick="window.location.href='zapekanka/lgekish/index.html';"
+                  src="zapekanka/lgekish/lgekish.jpg"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/lgekish/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Лже - киш из цветной капусты
+                </button>
+              </div>
+              <div id="z-item-1">
+                <img
+                  onclick="window.location.href='zapekanka/frittata/index.html';"
+                  src="zapekanka/frittata/frittay.jpg"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/frittata/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Фриттата по испански
+                </button>
+              </div>
+              <div id="z-item-1">
+                <img
+                  onclick="window.location.href='zapekanka/lazania/index.html';"
+                  src="zapekanka/lazania/lenlaz.jpg"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/lazania/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Ленивая лазанья с лавашом
+                </button>
+              </div>
+              <div id="z-item-1">
+                <img
+                  onclick="window.location.href='zapekanka/rabnaazapek/index.html';"
+                  src="zapekanka/rabnaazapek/rabzap.jpg"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/rabnaazapek/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Рыбная запеканка
+                </button>
+              </div>
+              <div id="z-item-1">
+                <img
+                  onclick="window.location.href='zapekanka/rogkisuxie/index.html';"
+                  src="zapekanka/rogkisuxie/rogsuxbdux.jpg"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/rogkisuxie/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Рожки сухие в духовке
+                </button>
+              </div>
+              <div id="z-item-1">
+                <img
+                  src="zapekanka/kabachki/Kabachki.jpg"
+                  onclick="window.location.href='zapekanka/kabachki/index.html';"
+                  alt=""
+                />
+                <button
+                  onclick="window.location.href='zapekanka/kabachki/index.html';"
+                  id="zapekanka-1"
+                  class="f-size"
+                >
+                  Кабачки в духовке
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pirog-2-item" id="pirog-2">
+            <div id="pir">
+              <div id="p-item-1">
+                <img
+                  onclick="window.location.href='pirog/irga/index.html';"
+                  src="pirog/irga/pirsorg.jpg"
+                  alt=""
+                />
+                <button
+                  id="pirog-1"
+                  class="f-size"
+                  onclick="window.location.href='pirog/irga/index.html';"
+                >
+                  Пирог с юргой
+                </button>
+              </div>
+              <div id="p-item-1">
+                <img
+                  onclick="window.location.href='pirog/mannik/index.html';"
+                  src="pirog/mannik/mannik.jpg"
+                  alt=""
+                />
+                <button
+                  id="pirog-1"
+                  class="f-size"
+                  onclick="window.location.href='pirog/mannik/index.html';"
+                >
+                  Пирог Манник
+                </button>
+              </div>
+              <div id="p-item-1">
+                <img
+                  onclick="window.location.href='pirog/morkov/index.html';"
+                  src="zapekanka/frittata/frittay.jpg"
+                  alt=""
+                />
+                <button
+                  id="pirog-1"
+                  class="f-size"
+                  onclick="window.location.href='pirog/morkov/index.html';"
+                >
+                  Морковный пирог
+                </button>
+              </div>
+              <div id="p-item-1">
+                <img
+                  onclick="window.location.href='pirog/sharlotka/index.html';"
+                  src="zapekanka/lazania/lenlaz.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="pirog-1"
+                  onclick="window.location.href='pirog/sharlotka/index.html';"
+                >
+                  Шарлотка
+                </button>
+              </div>
+              <div id="p-item-1">
+                <img
+                  onclick="window.location.href='pirog/vishna/index.html';"
+                  src="zapekanka/rabnaazapek/rabzap.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="pirog-1"
+                  onclick="window.location.href='pirog/vishna/index.html';"
+                >
+                  Пирог с вишней
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="salat-2-item" id="salat-2">
+            <div id="sal">
+              <div id="s-item-1">
+                <img
+                  onclick="window.location.href='salat/salat/index.html';"
+                  src="salat/salat/salit.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="salat-1"
+                  onclick="window.location.href='salat/salat/index.html';"
+                >
+                  Салат с крабовым мясом и помидорами
+                </button>
+              </div>
+              <div id="s-item-1">
+                <img
+                  onclick="window.location.href='salat/nevesta/index.html';"
+                  src="salat/nevesta/nevesta.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="salat-1"
+                  onclick="window.location.href='salat/nevesta/index.html';"
+                >
+                  Салат "Невеста"
+                </button>
+              </div>
+              <div id="s-item-1">
+                <img
+                  onclick="window.location.href='salat/galianna/index.html';"
+                  src="salat/galianna/gala.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="salat-1"
+                  onclick="window.location.href='salat/galianna/index.html';"
+                >
+                  Салат "Галеанна"
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="kasha-2-item" id="kasha-2">
+            <div id="kash">
+              <div id="k-item-1">
+                <img
+                  onclick="window.location.href='kasha/gerkules/index.html';"
+                  src="kasha/gerkules/fogerkul.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="kasha-1"
+                  onclick="window.location.href='kasha/gerkules/index.html';"
+                >
+                  Геркулес
+                </button>
+              </div>
+              <div id="k-item-1">
+                <img
+                  onclick="window.location.href='kasha/kasha/index.html';"
+                  src="kasha/kasha/fpshinka.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="kasha-1"
+                  onclick="window.location.href='kasha/kasha/index.html';"
+                >
+                  Пшённая каша
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="raznoe-2-item" id="raznoe-2">
+            <div id="raz">
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/oladii/index.html';"
+                  src="raznoe/oladii/oladfhoto.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/oladii/index.html';"
+                >
+                  Оладьи из кабачков
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/sous/index.html';"
+                  src="raznoe/sous/fsousmaso.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/sous/index.html';"
+                >
+                  Соус для мяса
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/pechen/index.html';"
+                  src="raznoe/pechen/fhotopech.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/pechen/index.html';"
+                >
+                  Печёнка 500 гр.
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/kabachki/index.html';"
+                  src="raznoe/kabachki/fkbakchkipo.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/kabachki/index.html';"
+                >
+                  Кабачки по "Венгерски"
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/ovochi/index.html';"
+                  src="raznoe/ovochi/foochitush.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/ovochi/index.html';"
+                >
+                  Овощи тушёные
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/vareniki/index.html';"
+                  src="raznoe/vareniki/fvar.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/vareniki/index.html';"
+                >
+                  Вареники
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/shamp/index.html';"
+                  src="raznoe/shamp/fshamp.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/shamp/index.html';"
+                >
+                  Шампиньоны из картошки
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/kabpal/index.html';"
+                  src="raznoe/kabpal/fpalkakabak.jpg"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/kabpal/index.html';"
+                >
+                  Кабачковые палочки
+                </button>
+              </div>
+              <div id="r-item-1">
+                <img
+                  onclick="window.location.href='raznoe/lepeshki/index.html';"
+                  src="raznoe/lepeshki/lep.webp"
+                  alt=""
+                />
+                <button
+                  class="f-size"
+                  id="raznoe-1"
+                  onclick="window.location.href='raznoe/lepeshki/index.html';"
+                >
+                  Пышные лепешки к супу
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-alls">
+            <div id="zapekanka-2">
+              <div id="zap">
+                <div id="z-item-1">
+                  <img
+                    onclick="window.location.href='zapekanka/zapekanka/index.html';"
+                    src="zapekanka/zapekanka/zapek.jpg"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/zapekanka/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Запеканка
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    onclick="window.location.href='zapekanka/lgekish/index.html';"
+                    src="zapekanka/lgekish/lgekish.jpg"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/lgekish/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Лже - киш из цветной капусты
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    onclick="window.location.href='zapekanka/frittata/index.html';"
+                    src="zapekanka/frittata/frittay.jpg"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/frittata/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Фриттата по испански
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    onclick="window.location.href='zapekanka/lazania/index.html';"
+                    src="zapekanka/lazania/lenlaz.jpg"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/lazania/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Ленивая лазанья с лавашом
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    onclick="window.location.href='zapekanka/rabnaazapek/index.html';"
+                    src="zapekanka/rabnaazapek/rabzap.jpg"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/rabnaazapek/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Рыбная запеканка
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    onclick="window.location.href='zapekanka/rogkisuxie/index.html';"
+                    src="zapekanka/rogkisuxie/rogsuxbdux.jpg"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/rogkisuxie/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Рожки сухие в духовке
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    src="zapekanka/kabachki/Kabachki.jpg"
+                    onclick="window.location.href='zapekanka/kabachki/index.html';"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='zapekanka/kabachki/index.html';"
+                    id="zapekanka-1"
+                    class="f-size"
+                  >
+                    Кабачки в духовке
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    src="tort/norka/norkakrota.jpg"
+                    onclick="window.location.href='tort/norka/index.html';"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='tort/norka/index.html';"
+                    id="tort-1"
+                    class="f-size"
+                  >
+                    Торт "Норка крота"
+                  </button>
+                </div>
+                <div id="z-item-1">
+                  <img
+                    src="tort/molreka/moreka.jpg"
+                    onclick="window.location.href='tort/molreka/index.html';"
+                    alt=""
+                  />
+                  <button
+                    onclick="window.location.href='tort/molreka/index.html';"
+                    id="tort-3"
+                    class="f-size"
+                  >
+                    Торт "Молочная река"
+                  </button>
+                </div>
+                <div id="p-item-1">
+                  <img
+                    onclick="window.location.href='pirog/irga/index.html';"
+                    src="pirog/irga/pirsorg.jpg"
+                    alt=""
+                  />
+                  <button
+                    id="pirog-1"
+                    class="f-size"
+                    onclick="window.location.href='pirog/irga/index.html';"
+                  >
+                    Пирог с юргой
+                  </button>
+                </div>
+                <div id="p-item-1">
+                  <img
+                    onclick="window.location.href='pirog/mannik/index.html';"
+                    src="pirog/mannik/mannik.jpg"
+                    alt=""
+                  />
+                  <button
+                    id="pirog-1"
+                    class="f-size"
+                    onclick="window.location.href='pirog/mannik/index.html';"
+                  >
+                    Пирог Манник
+                  </button>
+                </div>
+                <div id="p-item-1">
+                  <img
+                    onclick="window.location.href='pirog/morkov/index.html';"
+                    src="zapekanka/frittata/frittay.jpg"
+                    alt=""
+                  />
+                  <button
+                    id="pirog-1"
+                    class="f-size"
+                    onclick="window.location.href='pirog/morkov/index.html';"
+                  >
+                    Морковный пирог
+                  </button>
+                </div>
+                <div id="p-item-1">
+                  <img
+                    onclick="window.location.href='pirog/sharlotka/index.html';"
+                    src="zapekanka/lazania/lenlaz.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="pirog-1"
+                    onclick="window.location.href='pirog/sharlotka/index.html';"
+                  >
+                    Шарлотка
+                  </button>
+                </div>
+                <div id="p-item-1">
+                  <img
+                    onclick="window.location.href='pirog/vishna/index.html';"
+                    src="zapekanka/rabnaazapek/rabzap.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="pirog-1"
+                    onclick="window.location.href='pirog/vishna/index.html';"
+                  >
+                    Пирог с вишней
+                  </button>
+                </div>
+                <div id="s-item-1">
+                  <img
+                    onclick="window.location.href='salat/salat/index.html';"
+                    src="salat/salat/salit.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="salat-1"
+                    onclick="window.location.href='salat/salat/index.html';"
+                  >
+                    Салат с крабовым мясом и помидорами
+                  </button>
+                </div>
+                <div id="s-item-1">
+                  <img
+                    onclick="window.location.href='salat/nevesta/index.html';"
+                    src="salat/nevesta/nevesta.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="salat-1"
+                    onclick="window.location.href='salat/nevesta/index.html';"
+                  >
+                    Салат "Невеста"
+                  </button>
+                </div>
+                <div id="s-item-1">
+                  <img
+                    onclick="window.location.href='salat/galianna/index.html';"
+                    src="salat/galianna/gala.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="salat-1"
+                    onclick="window.location.href='salat/galianna/index.html';"
+                  >
+                    Салат "Галеанна"
+                  </button>
+                </div>
+                <div id="k-item-1">
+                  <img
+                    onclick="window.location.href='kasha/gerkules/index.html';"
+                    src="kasha/gerkules/fogerkul.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="kasha-1"
+                    onclick="window.location.href='kasha/gerkules/index.html';"
+                  >
+                    Геркулес
+                  </button>
+                </div>
+                <div id="k-item-1">
+                  <img
+                    onclick="window.location.href='kasha/kasha/index.html';"
+                    src="kasha/kasha/fpshinka.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="kasha-1"
+                    onclick="window.location.href='kasha/kasha/index.html';"
+                  >
+                    Пшённая каша
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/oladii/index.html';"
+                    src="raznoe/oladii/oladfhoto.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/oladii/index.html';"
+                  >
+                    Оладьи из кабачков
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/sous/index.html';"
+                    src="raznoe/sous/fsousmaso.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/sous/index.html';"
+                  >
+                    Соус для мяса
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/pechen/index.html';"
+                    src="raznoe/pechen/fhotopech.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/pechen/index.html';"
+                  >
+                    Печёнка 500 гр.
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/kabachki/index.html';"
+                    src="raznoe/kabachki/fkbakchkipo.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/kabachki/index.html';"
+                  >
+                    Кабачки по "Венгерски"
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/ovochi/index.html';"
+                    src="raznoe/ovochi/foochitush.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/ovochi/index.html';"
+                  >
+                    Овощи тушёные
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/vareniki/index.html';"
+                    src="raznoe/vareniki/fvar.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/vareniki/index.html';"
+                  >
+                    Вареники
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/shamp/index.html';"
+                    src="raznoe/shamp/fshamp.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/shamp/index.html';"
+                  >
+                    Шампиньоны из картошки
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/kabpal/index.html';"
+                    src="raznoe/kabpal/fpalkakabak.jpg"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/kabpal/index.html';"
+                  >
+                    Кабачковые палочки
+                  </button>
+                </div>
+                <div id="r-item-1">
+                  <img
+                    onclick="window.location.href='raznoe/lepeshki/index.html';"
+                    src="raznoe/lepeshki/lep.webp"
+                    alt=""
+                  />
+                  <button
+                    class="f-size"
+                    id="raznoe-1"
+                    onclick="window.location.href='raznoe/lepeshki/index.html';"
+                  >
+                    Пышные лепешки к супу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="boss-item">
+        <div id="grid-block"></div>
+        <img src="img/img.png" id="grid2" alt="kletka" />
+        <div class="text">
+          <div id="text">
+            <h1>
+              Хотите что - нибудь
+              <b style="color: #e1b651" id="span1">вкусненькое ?</b>
+            </h1>
+            <h2>
+              Жаждите
+              <b style="color: #e1b651" id="span2">домашней</b> кулинарии ?
+            </h2>
+            <h3 id="text3">Тогда вы пришли по адресу !</h3>
+            <a id="button1" href="#text4">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="divt444">
+        <h2 id="text4">
+          В интернете вы можете увидить множество кулинарных рецептов, однако не
+          все из них вкусные и полезные. <br />
+          <br />
+          На нашем сайте вы найдёте рецепты
+        </h2>
+      </div>
+      <div class="img">
+        <div id="ingt1">
+          <img src="img/img2.png" class="i11 i111" id="i1" />
+          <h3 class="text66" id="text6">С элементарными ингредиентами</h3>
+        </div>
+
+        <div id="ingt2">
+          <img src="img/img3.png" class="i12" id="i1" />
+          <h3 class="text66" id="text7">Неповторимые на вкус</h3>
+        </div>
+
+        <div id="ingt3">
+          <img src="img/img4.png" class="i13" id="i1" />
+          <h3 class="text66" id="text8">Качественные и проверенные</h3>
+        </div>
+      </div>
+      <div class="content-two">
+        <div class="flex">
+          <div class="helps">
+            <div class="contacts">
+              <img id="i5" src="img/img5.png" />
+            </div>
+            <div id="podd-h2">
+              <h2>Отдел поддержки</h2>
+            </div>
+            <form action="./send.php" method="post">
+              <div class="i">
+                <div id="i1">
+                  <input
+                    type="text"
+                    placeholder="ФИО"
+                    autocomplete="off"
+                    id="fio"
+                    name="fio"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    autocomplete="off"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div id="i2">
+                  <select name="theam" id="theam">
+                    <option value="theam">Тема сообщения</option>
+                    <option value="Просьба">Просьба</option>
+                    <option value="Предложение">Предложение</option>
+                    <option value="Жалоба">Жалоба</option>
+                    <option value="Вопрос">Вопрос</option>
+                    <option value="Заметил баг">Заметил баг</option>
+                    <option value="Деловое предложение">
+                      Деловое предложение
+                    </option>
+                    <option value="Другое">Другое</option>
+                  </select>
+                </div>
+                <div id="i3">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Сообщение"
+                    name="sms"
+                    id="sms"
+                  />
+                </div>
+                <div id="i4">
+                  <input type="submit" value="Отправить" id="i44" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

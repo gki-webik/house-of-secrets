@@ -1,0 +1,430 @@
+.tags-pattern, #none-pc {
+  display: none;
+}
+@media screen and (max-width: 899px){
+  @font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+.dark-fon {
+  background-image: url("../../img/fon13.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 130%;
+  filter: brightness(1) blur(2px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: -50px;
+  transform: rotate(0deg);
+}
+.light-fon {
+  background-image: url("../../img/fon10.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.8) blur(70px);
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.body-dark {
+  background-color: #1e1e1e;
+  color: rgb(211, 211, 211);
+}
+.body-light {
+  background-color: #d3d3d3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 5vw !important;
+  color-scheme: dark !important;
+  -webkit-color-scheme: dark !important;
+  -moz-color-scheme: dark !important;
+  -ms-color-scheme: dark !important;
+}
+footer {
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  width: 100%;
+  color: var(--font-color);
+}
+/* header, main, nav-a поверх фона */
+.z-fon {
+  position: relative;
+  z-index: 50;
+}
+a,
+button {
+  cursor: pointer;
+}
+header {
+  position: relative;
+  z-index: 99;
+}
+/* Крошки */
+.light-nav-a {
+  margin-left: 20px;
+  position: relative;
+  z-index: 99;
+  margin-top: 30px;
+}
+.light-nav-a > a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+/* Последняя хлебная крошка. Выделяется для красоты цветом */
+.light-tect {
+  color: rgb(0, 0, 0) !important;
+}
+/* Крошки */
+.dark-nav-a {
+  margin-left: 20px;
+  position: relative;
+  z-index: 99;
+}
+.dark-nav-a > a {
+  text-decoration: none;
+  color: rgb(194, 194, 194);
+}
+/* Последняя хлебная крошка. Выделяется для красоты цветом */
+.dark-tect {
+  color: rgb(255, 255, 255) !important;
+}
+/* Тире между крошками */
+.light-span-tire {
+  height: 2px;
+  background-color: rgb(40, 40, 40);
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Тире между крошками */
+.dark-span-tire {
+  height: 2px;
+  background-color: rgb(112, 112, 112);
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Поиск */
+#searchs {
+  display: none;
+}
+h1 {
+  color: red;
+  margin-left: 20px;
+}
+.white-light {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #ffffff6a;
+  padding: 25px;
+  border-radius: 7px;
+  border: 2px solid #c8c8c876;
+}
+.white-light > p > a {
+  color: #0400ff;
+  text-decoration: none;
+}
+.white-light > b {
+  margin: 0;
+}
+.white-light > p > b {
+  margin: 0;
+}
+.white-dark {
+  margin-left: 20px;
+  background-color: #161616b0;
+  margin-right: 20px;
+  padding: 25px;
+  border-radius: 7px;
+}
+.white-dark > p > a {
+  color: #27cfff;
+  text-decoration: none;
+}
+.white-dark > b {
+  margin: 0;
+}
+.white-dark > p > b {
+  margin: 0;
+}
+#danger > p > a {
+  color: #ff2b2be1;
+  text-decoration: none;
+}
+table {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  position: relative;
+  overflow-y: hidden;
+  z-index: 99;
+  margin: 20px;
+  color: black;
+  text-align: center;
+}
+.t {
+  padding: 10px;
+  background-color: #79ff2ba8;
+}
+.t2 {
+  padding: 10px;
+  background-color: #ffd000;
+}
+.t3 {
+  padding: 10px;
+  background-color: #f93535c8;
+}
+.z {
+  background-color: #075df1a8;
+  padding: 10px;
+}
+td {
+  border: 3px solid rgb(43, 43, 43);
+  empty-cells: show;
+}
+#primer {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+}
+@media screen and (min-width: 900px){
+  @font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+.dark-fon {
+  background-image: url("../../img/fon13.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 130%;
+  filter: brightness(1) blur(10px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: -50px;
+  transform: rotate(0deg);
+}
+.light-fon {
+  background-image: url("../../img/fon10.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.8) blur(70px);
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.body-dark {
+  background-color: #1e1e1e;
+  color: rgb(211, 211, 211);
+}
+.body-light {
+  background-color: #d3d3d3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1.3vw !important;
+  color-scheme: dark !important;
+  -webkit-color-scheme: dark !important;
+  -moz-color-scheme: dark !important;
+  -ms-color-scheme: dark !important;
+}
+footer {
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  width: 100%;
+  color: var(--font-color);
+}
+/* header, main, nav-a поверх фона */
+.z-fon {
+  position: relative;
+  z-index: 50;
+}
+a,
+button {
+  cursor: pointer;
+}
+header {
+  position: relative;
+  z-index: 99;
+}
+/* Крошки */
+.light-nav-a {
+  margin-left: 100px;
+  position: relative;
+  z-index: 99;
+  margin-top: 30px;
+}
+.light-nav-a > a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+/* Последняя хлебная крошка. Выделяется для красоты цветом */
+.light-tect {
+  color: rgb(0, 0, 0) !important;
+}
+/* Крошки */
+.dark-nav-a {
+  margin-left: 100px;
+  position: relative;
+  z-index: 99;
+}
+.dark-nav-a > a {
+  text-decoration: none;
+  color: rgb(194, 194, 194);
+}
+/* Последняя хлебная крошка. Выделяется для красоты цветом */
+.dark-tect {
+  color: rgb(255, 255, 255) !important;
+}
+/* Тире между крошками */
+.light-span-tire {
+  height: 2px;
+  background-color: rgb(127, 127, 127);
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Тире между крошками */
+.dark-span-tire {
+  height: 2px;
+  background-color: rgb(208, 208, 208) !important;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Поиск */
+#searchs {
+  display: none;
+}
+h1 {
+  color: red;
+  margin-left: 100px;
+}
+.white-light {
+  margin-left: 100px;
+  margin-right: 30px;
+  background-color: #ffffff6a;
+  padding: 25px;
+  border-radius: 7px;
+  border: 2px solid #c8c8c876;
+}
+.white-light > p > a {
+  color: #0400ff;
+  text-decoration: none;
+}
+.white-light > b {
+  margin: 0;
+}
+.white-light > p > b {
+  margin: 0;
+}
+.white-dark {
+  margin-left: 100px;
+  background-color: #161616b0;
+  margin-right: 30px;
+  padding: 25px;
+  border-radius: 7px;
+}
+.white-dark > p > a {
+  color: #27cfff;
+  text-decoration: none;
+}
+.white-dark > b {
+  margin: 0;
+}
+.white-dark > p > b {
+  margin: 0;
+}
+#danger > p > a {
+  color: #ff2b2be1;
+  text-decoration: none;
+}
+table {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  position: relative;
+  overflow-y: hidden;
+  z-index: 99;
+  text-align: center;
+  margin: 30px;
+  color: black;
+}
+.t {
+  padding: 10px;
+  background-color: #79ff2ba8 !important;
+}
+.t2 {
+  padding: 10px;
+  background-color: #ffd000 !important;
+}
+.t3 {
+  padding: 10px;
+  background-color: #f93535c8 !important;
+}
+.z {
+  background-color: #075df1a8 !important;
+  padding: 10px;
+}
+td {
+  border: 3px solid rgb(43, 43, 43);
+  empty-cells: show;
+}
+table {
+  display: flex;
+  justify-content: center;
+}
+#primer {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+}
+input, datalist, option, optgroup, select, textarea {
+  background-color: white;
+  color: black;
+}
+td, tr {
+  background-color: rgb(219, 219, 219);
+}
+
+@media screen and (width >= 655px) and (width <=898px) {
+  body, pre{
+    font-size: 1.3em !important;
+  }
+}

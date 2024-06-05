@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@media screen and (max-width: 900px){
+    body{
+  font-family: Forum;
+  font-weight: bold;
+  background-color: rgb(55,135,233);
+  height: 1500px;
+  margin: 0px;
+  width: 100%;
+}
+
+#log{
+  margin-top: 80px;
+  position: relative;
+  z-index: 16;
+  text-align: center;
+}
+#logot{
+  width: 30%;
+}
+
+    #primtext{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #zit{
+    position: absolute;
+    top: 1100px;
+    width: 70%;
+    background-size: cover;
+    height: 200px;
+    left: 15%;
+    background-color: #ffffffc3;
+  }
+  #text1{
+    text-align: center;
+    top: -100px;
+    font-size: 30px;
+    position: relative;
+    letter-spacing: 10px;
+  }  
+  #sad{
+  position: absolute;
+  font-size: 6vw;
+  white-space: pre;
+  top: 280px;
+  font-weight: bold;
+  width: 90%;
+  background-size: cover;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 70px;
+}
+ #sad3{
+  position: absolute;
+  top: 480px;
+  font-size: 5vw;
+  white-space: pre;
+  width: 90%;
+  background-size: cover;
+  text-align: center;
+  }
+  #fon{
+    position: absolute;
+    top: -10000px;
+    display: none;
+  } 
+  #sad2{
+    display: none;
+  }
+ #menu{
+   width: 100%;
+   font-size: 5vw;
+   color: black;
+   background-color: #59a0c5b5;
+   z-index: 999;
+   top: 0;
+   left: 0;
+   margin: 0;
+   position: absolute;
+   font-family: Forum;
+   padding: 10px;
+   background-size: cover;
+   width: 100%;
+ }
+  .b5{
+     display: none;
+  }
+  #b5-i{
+   background: #59a0c5;
+   padding: 30px;
+   background-size: cover;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+   z-index: 999;
+   position: relative;
+  }
+  .button1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /*
+  .button1{
+  width: 50%;
+  position: absolute;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+    margin-top: 60px;
+}
+ #button11{
+  width: 50%;
+  position: absolute;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+    margin-top: 60px;
+    text-align: left;
+}
+*/
+.button{
+  position: relative;
+  top: -10000px;
+  display: none;
+}
+/*
+  .button2{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  background-size: cover;
+}
+  .button3{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 141px;
+  background-size: cover;
+}*/
+  a{
+  z-index: 1;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  white-space: pre
+}
+#t{
+  position: relative;
+  padding: 10px;
+}
+  
+  #fon2{
+    background-image: url(img/fon2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;   
+        -ms-background-size: cover;   
+        -o-background-size: cover;   
+        -moz-background-size: cover;   
+        -webkit-background-size: cover;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        position: absolute;
+        margin: 0px;
+  }
+  #blue{
+    position: absolute;
+    top: 865px;
+    left: 0px;
+    background-color: rgb(55,135,233);
+    width: 100%;
+    background-size: cover;
+    height: 350px;
+  }
+    #fon3{
+    position: absolute;
+    top: -10000px;
+  }
+}
+@media screen and (min-width: 1000px){
+  body{
+    height: auto;
+    font-family: Forum;
+    margin: 0;
+  }
+    #fon{
+    width: 100%;
+    left: 0;
+  }
+   #fon2{
+    position: absolute;
+    top: -10000px;
+    display: none;
+  }
+  #fon3{
+    width: 100%;
+    height: 700px;
+    margin-left: 0;
+  }
+  a{
+  z-index: 1;
+  position: relative;
+  top: 50px;
+  color: black;
+  margin: 10px 20px 0px 20px;
+  text-decoration: none;
+  white-space: pre;
+  font-weight: 600;
+}
+.button{
+  font-size: 1.5vw;
+  position: absolute;
+  padding: 0px 50px 0px 50px;
+}
+
+.button1, #button11, .button3{
+  position: relative;
+  display: none;
+  top: -10000px;
+}
+#sad{
+  position: relative;
+  top: -10000px;
+}
+  #sad2{
+  position: absolute;
+  top: 300px;
+  font-size: 4vw;
+  left: 20px;
+  white-space: pre;
+  }
+    #sad3{
+  position: absolute;
+  top: 500px;
+  font-size: 3vw;
+  left: 45px;
+  white-space: pre;
+  }
+    #zit{
+    width: 800px;
+    height: 300px;
+    margin-top: -450px; 
+  }
+  
+  #text1{
+    position: relative;
+    text-align: center;
+    top: -100px;
+    font-size: 50px;
+    letter-spacing: 10px;
+  }  
+  #primtext{
+    text-align: center;
+    top: 50px;
+    font-size: 2vw;
+    z-index: 1;
+  }
+  #b5-i{
+    display: none;
+  }
+  #logot{
+    display: none;
+}
+#menu{
+  display: none;
+}
+}
+
